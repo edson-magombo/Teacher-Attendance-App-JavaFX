@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class LoanCalculation {
 
     public static void main(String []args){
+//define the necessary variables in the main method.
         String fullName;
         double salary, loanAmount, taxedPay, loanRepay, monthlyRepay;
 
