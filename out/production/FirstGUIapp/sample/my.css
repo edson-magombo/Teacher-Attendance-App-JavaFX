@@ -1,0 +1,197 @@
+.myTree .tree-cell{
+
+}
+.myTree {
+    -fx-font: 16px Segoe;
+}
+.tree-cell {;
+
+}
+.myTree .root .cell{
+    -fx-background-color: powderblue;
+}
+.myTree .root {
+    -fx-background-color: powderblue;
+}
+.tree-cell .cell{
+    -fx-background-color: deepskyblue;
+}
+
+.table-view{
+    -fx-background-color: lightblue;
+}
+
+/*Style of entire tableView when is getting focused*/
+.table-view:focused{
+      /*-fx-background-color: transparent;*/
+}
+
+
+/*Style of each column header in the tableView*/
+.table-view .column-header {
+      -fx-background-color: transparent;
+}
+
+/*Style of each column header's background in the tableView*/
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(blue 0.0%, skyblue 100.0%);
+}
+
+/*Style of each column header's label  in the tableView*/
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+    -fx-font-size:15px;
+
+}
+
+/*Style of each column in the tableView*/
+  .table-view .table-column{
+      -fx-alignment:center;
+  }
+
+/*Style of each table cell*/
+  .table-view .table-cell{
+      -fx-font-weight: normal;
+      -fx-font-size:15px;
+      /* -fx-text-fill:orange; */
+  }
+
+/*Style for each < non odd> row of table view*/
+ .table-row-cell{
+    -fx-background-color: white;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+
+/*Style for each <odd> row of table view*/
+.table-row-cell:odd{
+    -fx-background-color: #e6f4f6;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+
+/*Style of each entire row in the table view*/
+.table-row-cell:selected {
+    -fx-border-color:transparent navy transparent navy  ;
+    -fx-border-width:2.0;
+}
+
+/*Style of each entire row in the table view when is hovered*/
+  .table-row-cell:hover {
+      -fx-background-color:skyblue;
+  }
+
+/*Style of each entire row in the table view when is getting focused*/
+  .table-row-cell:focused {
+      -fx-background-color:dodgerblue;
+  }
+
+
+#homePage{
+    -fx-background-image: url("myimage.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#enter{
+    -fx-background-image: url("manip.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#user{
+    -fx-background-image: url("manip.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#main{
+    -fx-background-image: url("image.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1360 742;
+    -fx-background-position: top top;
+}
+
+#redButton {
+     -fx-background-radius: 5,4,3,5;
+     -fx-background-insets: 0,1,2,0;
+     -fx-text-fill: white;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+     -fx-text-fill: linear-gradient(white, #d0d0d0);
+     -fx-font-size: 25px;
+     -fx-padding: 10 20 10 20;
+ }
+
+#yellow {
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 25px;
+    -fx-padding: 10 20 10 20;
+}
+
+#green {
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 25px;
+    -fx-padding: 10 20 10 20;
+}
+
+#attendancePage{
+    -fx-background-image: url("school.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#AttendanceLogIn{
+    -fx-background-image: url("mine2.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#records{
+    -fx-background-image: url("check.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#grades{
+    -fx-background-image: url("gallery.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#GradesPage{
+    -fx-background-image: url("remy.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#checkGrades{
+    -fx-background-image: url("formula.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}
+
+#aboutUs{
+    -fx-background-image: url("end.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1100 710;
+    -fx-background-position: top left;
+}

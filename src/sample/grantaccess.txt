@@ -1,0 +1,82 @@
+// create boolean variable for final decision
+boolean grantAccess = false;
+
+// get the user name and password when user press on login button
+// you already know how to use action listener
+// (i.e wrap the following code with action listener block of login button)
+String userName = tfUsername.getText();
+String password = tfPassword.getText();
+
+File f = new File("users.txt");
+try {
+     Scanner read = new Scanner(f);
+     int noOfLines=0; // count how many lines in the file
+     while(read.hasNextLine()){
+           noOfLines++;
+     }
+
+    //loop through every line in the file and check against the user name & password (as I noticed you saved inputs in pairs of lines)
+    for(int i=0; i<noOfLines; i++){
+       if(read.nextLine().equals(userName)){ // if the same user name
+          i++;
+          if(read.nextLine().equals(password)){ // check password
+             grantAccess=true; // if also same, change boolean to true
+             break; // and break the for-loop
+          }
+       }
+    }
+     if(grantAccess){
+        // let the user continue
+        // and do other stuff, for example: move to next window ..etc
+     }
+     else{
+         // return Alert message to notify the deny
+     }
+
+} catch (FileNotFoundException e) {
+
+        e.printStackTrace();
+}
+
+public void ThumbNail(String picture, String labelled){
+
+        //INSERT THE IMAGE FILE
+        final ImageView imv = new ImageView();
+        final Image image2 = new Image(Main.class.getResourceAsStream(picture));
+        imv.setImage(image2);
+        imv.setFitWidth(280);
+        imv.setFitHeight(200);imv.setPreserveRatio(true);
+        imv.setStyle("-fx-alignment: center;");
+
+        //LABEL FOR THE THUMBNAIL
+        Label testing = new Label(labelled);
+        testing.setFont(new Font("Palatino linotype", 15));
+        testing.setStyle("-fx-text-fill: gray;" +
+                "-fx-alignment: center;" +
+                "-fx-padding: 15;");
+
+        //BUTTON TO PROCEED THROUGH THE THUMBNAIL
+        btn1 = new Button("Start");
+        btn1.maxWidth(300);
+        btn1.setPadding(new Insets(1,68, 1, 65));
+
+        //THE V_BOX LAYOUT CARRYING EVERYTHING TOGETHER
+        VBox lay0 = new VBox();
+        lay0.getChildren().addAll(imv, testing, btn1);
+        lay0.setStyle("-fx-border-radius: 15;" +
+                "-fx-padding: 20;" +
+                "-fx-border-style: solid inside;" +
+                "-fx-border-width: 2;" +
+                "-fx-border-insets: 5;" );
+        lay0.setMaxWidth(230);lay0.setMaxHeight(250);
+    }
+
+
+
+
+    sb.valueProperty().addListener(new ChangeListener<Number>() {
+                public void changed(ObservableValue<? extends Number> ov,
+                                    Number old_val, Number new_val) {
+                    layout.setLayoutY(-new_val.doubleValue());
+                }
+            });
