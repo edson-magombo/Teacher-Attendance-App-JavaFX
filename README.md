@@ -1,6 +1,6 @@
 # TEACHER ATTENDANCE APP USING JAVAFX
 
-ignore the other files, the main source code is in the main.java file. 
+ignore all the other java files i was using for testing, the main source code for the application is in the source/main.java file. 
 
 Or you can choose to run the compiled jar file in the out/artifacts/JavaFXApp folder.
 
